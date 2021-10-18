@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Card</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/1fb4036ffa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <section class="top-bar">
+        <div class="container container-top-bar__custom">
+          <div class="row">
+            <div class="col-2 col-custom">
+              <div class="phone">
+                <i class="fas fa-headset"></i>
+                <p class="phone-number">+1916-85-2235</p>
+              </div>
+            </div>
+            <div class="col-3 col-custom border-left">
+              <ul class="top-bar__social-list">
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-linkedin-in"></i></li>
+                <li><i class="fab fa-google-plus-g"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-youtube"></i></i></li>
+                <li><i class="fab fa-pinterest-p"></i></li>
+              </ul>
+            </div>
+            <div class="col-6 col-custom border-left">
+              <ul class="top-bar__page-link-list">
+                <li>> My Account</li>
+                <li>> FAQ</li>
+                <li>> Contact Us</li>
+                <li>> Newsletter Signup</li>
+                <li>> Shipping Terms</li>
+              </ul>
+            </div>
+            <div class="col-1 col-custom ">
+              <button class="top-bar__button">My Wishlist</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="nav-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-2 col-custom">
+              <img src="./images/logo.png" alt="logo" class="nav-bar__logo">
+            </div>
+            <div class="col-8 col-custom">
+              <ul class="nav-bar__nav-link-list">
+                <li><a>HOME</a></li>
+                <li><a>PAGES</a></li>
+                <li><a>BLOGS</a></li>
+                <li><a>PORTFOLIOS</a></li>
+                <li class="nav-bar__nav-link-list__shop-link"><a>SHOP</a></li>
+                <li><a>FEATURES</a></li>
+                <li><a>ELEMENTS</a></li>
+              </ul>
+            </div>
+            <div class="col-2 col-custom">
+              <ul class="nav-bar__nav-icon-list">
+                <li><i class="fas fa-flag-usa"></i></li>
+                <li><i class="fas fa-search"></i></li>
+                <li>
+                  <i class="fas fa-shopping-basket"></i>
+                  <div class="nav-bar__shopping-quantity">
+                    <div class="arrow"></div>
+                    <span>2</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container container-hero__custom">
+          <div class="row">
+            <div class="col-6">
+              <div class="hero__title">
+                <h1>
+                  <span>WOO</span> CARD
+                </h1>
+                <div class="hero__breadcumps">
+                  <ul>
+                    <li>Home</li>
+                    <li>Breadcrumbs Example</li>
+                    <li>Second Level</li>
+                    <li>Third Level</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <i class="fas fa-shopping-cart hero__icon-shopping-card"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-content">
+        <div class="container container-main-content-custom">
+          <div class="table-cart-title">
+            <p>You Have <span>6 Items</span> In Your Cart</p>
+          </div>
+          <div class="table-cart">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>PRODUCT</th>
+                  <th>PRICE</th>
+                  <th>QUANTITY</th>
+                  <th>TOTAL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="product-image">
+                      <i class="fas fa-times-circle"></i>
+                      <div class="image"></div>
+                    </div>
+                  </td>
+                  <td>$35.99</td>
+                  <td>
+                    <div class="number-input">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                      <input class="quantity" min="0" name="quantity" value="1" type="number">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                  </td>
+                  <td>$35.99</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product-image">
+                      <i class="fas fa-times-circle"></i>
+                      <div class="image"></div>
+                    </div>
+                  </td>
+                  <td>$35.99</td>
+                  <td>
+                    <div class="number-input">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                      <input class="quantity" min="0" name="quantity" value="1" type="number">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                  </td>
+                  <td>$35.99</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product-image">
+                      <i class="fas fa-times-circle"></i>
+                      <div class="image"></div>
+                    </div>
+                  </td>
+                  <td>$35.99</td>
+                  <td>
+                    <div class="number-input">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                      <input class="quantity" min="0" name="quantity" value="1" type="number">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                  </td>
+                  <td>$35.99</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product-image">
+                      <i class="fas fa-times-circle"></i>
+                      <div class="image"></div>
+                    </div>
+                  </td>
+                  <td>$35.99</td>
+                  <td>
+                    <div class="number-input">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                      <input class="quantity" min="0" name="quantity" value="1" type="number">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                  </td>
+                  <td>$35.99</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product-image">
+                      <i class="fas fa-times-circle"></i>
+                      <div class="image"></div>
+                    </div>
+                  </td>
+                  <td>$35.99</td>
+                  <td>
+                    <div class="number-input">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                      <input class="quantity" min="0" name="quantity" value="1" type="number">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                  </td>
+                  <td>$35.99</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product-image">
+                      <i class="fas fa-times-circle"></i>
+                      <div class="image"></div>
+                    </div>
+                  </td>
+                  <td>$35.99</td>
+                  <td>
+                    <div class="number-input">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                      <input class="quantity" min="0" name="quantity" value="1" type="number">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                  </td>
+                  <td>$35.99</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4">
+                    <div class="row">
+                      <div class="col tfoot-col-custom-left">
+                        <input class="input-coupon" type="text" placeholder="Enter Coupon Code Here...">
+                        <button class="button-coupon">APPLY</button>
+                      </div>
+                      <div class="col tfoot-col-custom-right">
+                        <button class="update-cart-button">UPDATE CART</button>
+                        <button class="checkout-button"><i class="far fa-check-circle"></i> CHECKOUT</button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="order-details">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="shipping">
+                <p>CALCULATE SHIPPING</p>
+                <div class="form-shipping">
+                  <div class="row row-form-shipping-custom">
+                    <div class="col-12">
+                      <select class="select-country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row row-form-shipping-custom">
+                    <div class="col">
+                      <input class="input-shipping-form" type="text" placeholder="State/Country">
+                    </div>
+                    <div class="col">
+                      <input class="input-shipping-form" type="text" placeholder="PostCode/Zip">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <button class="button-coupon">UPDATE TOTALS</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="shipping">
+                <p>CART TOTALS</p>
+                <table class="table-checkout">
+                  <tr>
+                    <td>Subtotal</td>
+                    <td>$1285.99</td>
+                  </tr>
+                  <tr>
+                    <td>Shipping and handling</td>
+                    <td>
+                      <ul class="shipping-and-handling">
+                        <li>Flat Rate: $3.99</li>
+                        <li>Free Shipping</li>
+                        <li>Flat Rate: $12.99</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Total</td>
+                    <td>$2015.00</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="interested">
+        <div class="container">
+          <div class="interested-title">
+            <p>YOU MAY BE INTERESTED IN</p>
+            <div class="interested-title-hr">
+              <hr>
+              <hr>
+            </div>
+          </div>
+          <div class="interested-list">
+            <div class="row">
+              <div class="col col-interested-custom">
+                <div class="interested-item">
+                  <div class="interested-item-image"></div>
+                  <div class="interested-item-content">
+                    <p>Denim Classy Shorts</p>
+                    <span>$35.00-$89.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-interested-custom">
+                <div class="interested-item">
+                  <div class="item-new-mark">SALES</div>
+                  <div class="item-sales-mark">NEW</div>
+                  <div class="interested-item-image"></div>
+                  <div class="interested-item-content">
+                    <p>Denim Classy Shorts</p>
+                    <span>$35.00-$89.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-interested-custom">
+                <div class="interested-item">
+                  <div class="interested-item-image"></div>
+                  <div class="interested-item-content">
+                    <p>Denim Classy Shorts</p>
+                    <span>$35.00-$89.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-interested-custom">
+                <div class="interested-item">
+                  <div class="interested-item-image"></div>
+                  <div class="interested-item-content">
+                    <p>Denim Classy Shorts</p>
+                    <span>$35.00-$89.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-interested-custom">
+                <div class="interested-item">
+                  <div class="interested-item-image"></div>
+                  <div class="interested-item-content">
+                    <p>Denim Classy Shorts</p>
+                    <span>$35.00-$89.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-interested-custom">
+                <div class="interested-item">
+                  <div class="interested-item-image"></div>
+                  <div class="interested-item-content">
+                    <p>Denim Classy Shorts</p>
+                    <span>$35.00-$89.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <img src="./images/logo-footer.png" class="logo-footer">
+              <p class="about-des logo-footer-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Recusandae, inventore a. Temporibus quis aliquam deleniti quia asperiores, 
+                veritatis distinctio non culpa ad, harum deserunt labore debitis nulla. 
+                Quidem, fugit rem!
+              </p>
+              <div class="about-contact">
+                <h3 class="about-title about-contact-title">
+                  CONTACT <span class="arrow-bottom-left"></span>
+                </h3>
+                <p class="about-des about-contact-address">
+                  <i class="fas fa-map-marker-alt"></i> Addres: 980 New Hampshire Avenue Northwest
+                  #100, Washington, DC 20037, USA
+                </p>
+              </div>
+              <div class="about-connect">
+                <ul>
+                  <li>
+                    <p class="about-des">
+                      <i class="fas fa-headset"></i> Phone: +1916-875-2235
+                    </p>
+                  </li>
+                  <li>
+                    <p class="about-des">
+                      <i class="fas fa-fax"></i> Fax: +1916-875-2235
+                    </p>
+                  </li>
+                  <li>
+                    <p class="about-des">
+                      <i class="far fa-envelope"></i> Email: <span>cong.nv99.hust@gmail.com</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p class="about-des">
+                      <i class="fas fa-globe"></i> Website: <span>www.codex-themes.com</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="row">
+                <div class="col">
+                  <h3 class="about-title">
+                    RECENT POSTS <span class="arrow-bottom-left"></span>
+                 </h3>
+                  <div class="recent-posts">
+                    <div class="recent-posts-item">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="recent-posts-item-image"></div>
+                        </div>
+                        <div class="col-8">
+                          <div class="row">
+                            <p class="about-des">
+                              Proin gravida nibh vel velit auctor aliquet aenaen...
+                            </p>
+                          </div>
+                          <div class="row">
+                            <div class="recent-posts-item-message">
+                              <p class="about-des">
+                                <span>27 Dec 2015</span>
+                              </p>
+                              <p class="about-des">
+                                <i class="fas fa-comments"></i> 0
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recent-posts-item">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="recent-posts-item-image"></div>
+                        </div>
+                        <div class="col-8">
+                          <div class="row">
+                            <p class="about-des">
+                              Proin gravida nibh vel velit auctor aliquet aenaen...
+                            </p>
+                          </div>
+                          <div class="row">
+                            <div class="recent-posts-item-message">
+                              <p class="about-des">
+                                <span>27 Dec 2015</span>
+                              </p>
+                              <p class="about-des">
+                                <i class="fas fa-comments"></i> 0
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="recent-posts-item">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="recent-posts-item-image"></div>
+                        </div>
+                        <div class="col-8">
+                          <div class="row">
+                            <p class="about-des">
+                              Proin gravida nibh vel velit auctor aliquet aenaen...
+                            </p>
+                          </div>
+                          <div class="row">
+                            <div class="recent-posts-item-message">
+                              <p class="about-des">
+                                <span>27 Dec 2015</span>
+                              </p>
+                              <p class="about-des">
+                                <i class="fas fa-comments"></i> 0
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <h3 class="about-title">
+                    EMAIL US <span class="arrow-bottom-left"></span>
+                 </h3>
+                  <form action="" class="form-message">
+                    <div class="form-message-input">
+                      <i class="fas fa-user-alt"></i>
+                      <input type="text" id="fname" name="fname" placeholder="Your name">
+                    </div>
+                    <div class="form-message-input">
+                      <i class="fas fa-envelope"></i>
+                      <input type="text" id="lname" name="lname" placeholder="your@email.com">
+                    </div>
+                    <div class="form-message-input">
+                      <textarea name="" id="" cols="30" rows="4" placeholder="Your message "></textarea>
+                    </div>
+                    <div class="form-message-input">
+                      <input type="submit" value="SEND MESSAGE">
+                    </div>
+                  </form>
+                </div>
+                <div class="col">
+                  <h3 class="about-title">
+                    FLICKR FEED <span class="arrow-bottom-left"></span>
+                 </h3>
+                  <div class="flickr-feed">
+                    <div class="flickr-feed-item"></div>
+                    <div class="flickr-feed-item"></div>
+                    <div class="flickr-feed-item"></div>
+                    <div class="flickr-feed-item"></div>
+                    <div class="flickr-feed-item"></div>
+                    <div class="flickr-feed-item"></div>
+                    <div class="flickr-feed-item"></div>
+                    <div class="flickr-feed-item"></div>
+                    <div class="flickr-feed-item"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-about-custom">
+                <div class="col">
+                  <h3 class="about-title">
+                    USEFUL LINKS <span class="arrow-bottom-left"></span>
+                  </h3>
+                  <div class="useful-links">
+                    <ul>
+                      <li><span>General Information For Users</span></li>
+                      <li><span>Interactive Fairy Tales</span></li>
+                      <li><span>Official Storybook Maker Website</span></li>
+                      <li><span>Everyday Mathematics Links</span></li>
+                      <li><span>Basic Knowledge and Experience</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col">
+                  <h3 class="about-title">
+                    PROJECTS / CLIENTS ? <span class="arrow-bottom-left"></span>
+                  </h3>
+                  <div class="project-client">
+                    <div class="project-client-slide">
+                      <div class="row">
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <span class="slide-cell-1"></span>
+                        </div>
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="project-client-slide">
+                      <div class="row">
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="project-client-slide">
+                      <div class="row">
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                        <div class="col">
+                          <span class="slide-cell"></span>
+                        </div>
+                      </div>
+                    </div><br>
+                    <div style="text-align: center">
+                      <div class="dot" onclick="currentSlide(1)"></div>
+                      <div class="dot" onclick="currentSlide(2)"></div>
+                      <div class="dot" onclick="currentSlide(3)"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <h3 class="about-title">
+                    NEWSLETTER <span class="arrow-bottom-left"></span>
+                  </h3>
+                  <div class="row">
+                    <p class="about-des">
+                      Subscribe to our MailChimp newsletter and stay up to date with all events coming straight in your mailbox:
+                    </p>
+                  </div>
+                  <div class="row">
+                    <form action="" class="form-email-newsletter">
+                      <div class="form-email-newsletter-input">
+                        <input type="text" placeholder="Your email address">
+                        <input type="submit" value="&#10095;">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="row">
+                    <p class="about-des">
+                      Personal information will be encrypted
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <p class="footer-des">
+                <i class="far fa-envelope"></i> Copyright 2015: <span>CodexThemes</span>
+              </p>
+            </div>
+            <div class="col-4">
+              <div class="footer-contact">
+                <ul class="footer-contact-list">
+                  <li>
+                    <div class="footer-contact-list-item">
+                      <a class="footer-des">Support</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="footer-contact-list-item">
+                      <a class="footer-des">Contact Us</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="footer-contact-list-item">
+                      <a class="footer-des">Disclaimer</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="footer-contact-list-item">
+                      <a class="footer-des">Privacy Policy</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="footer-contact-social">
+                <ul class="footer-contact-social-list">
+                  <li>
+                    <div class="footer-contact-list-social-item">
+                      <a class="footer-des"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="footer-contact-list-social-item">
+                      <a class="footer-des"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="footer-contact-list-social-item">
+                      <a class="footer-des"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="footer-contact-list-social-item">
+                      <a class="footer-des"><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="footer-contact-list-social-item">
+                      <a class="footer-des"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="footer-contact-list-social-item">
+                      <a class="footer-des"><i class="fab fa-youtube"></i></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="footer-contact-list-social-item">
+                      <a class="footer-des"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="./js/slideshow.js"></script>
+  </body>
+  <script src="//code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
